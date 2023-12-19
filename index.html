@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="content">
+            <div class="logo">
+                <img src="./illustration.svg" alt="" />
+            </div>
+           
+            <div class="image"></div>
+           
+            <div class="text">
+            Присоединитесь к нам уже сегодня <br />
+            и получите незабываемые впечатления	!
+            </div>
+        </div>
+        <form id="form" >
+            <div class="title">Начнём</div>
+            <div>
+                <label for="username">Имя пользователя</label>
+                <i class="fas fa-user"></i>
+                <input 
+                    type="text"
+                    name="username"
+                    id="username"
+                    placeholder="Joy Shaheb "
+                />
+                <i class="fas fa-exclamation-circle failure-icon"></i>
+                <i class="far fa-check-circle success-icon"></i>
+                <div class="error"></div>
+            </div>
+            <div>
+                <label for="email">Почта</label>
+                <i class="far fa-envelope"></i>
+                <input
+                    type="email"
+                    name="email"
+                    id="email"
+                    placeholder="abc@gmail.com"
+                />
+                <i class="fas fa-exclamation-circle failure-icon"></i>
+                <i class="far fa-check-circle success-icon"></i>
+                <div class="error"></div>
+            </div>
+            <div>
+                <label for="password">Пароль</label>
+                <i class="fas fa-lock"></i>
+                <input
+                    type="password"
+                    name="password"
+                    id="password"
+                    placeholder="Password here"
+                />
+                <i class="fas fa-exclamation-circle failure-icon"></i>
+                <i class="far fa-check-circle success-icon"></i>
+                <div class="error"></div>
+            </div>
+            <div>
+                <label for="repeat-password">Повторите Ваш пароль, пожалуйста</label>
+                <i class="fas fa-lock"></i>
+                <input
+                    type="password"
+                    name="repeat-password"
+                    id="confirmPassword"
+                    placeholder="Подтвердите пароль"
+                />
+                <i class="fas fa-exclamation-circle failure-icon"></i>
+                <i class="far fa-check-circle success-icon"></i>
+                <div class="error"></div>
+            </div>
+            <button id="btn" type="submit" >Представить</button>
+            <button onclick="saveData()">Сохранить данные</button>
+            <button type="button" onclick="sendMail()"> Отправить </button>
+            
+        </form>
+    </div>
+    <script src="./main.js"></script>
+</body>
+</html>
